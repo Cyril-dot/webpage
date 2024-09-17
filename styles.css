@@ -1,0 +1,271 @@
+/* Import Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=Orbitron:wght@400;700&family=Dancing+Script:wght@400;700&display=swap');
+
+/* Global Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* Base font family */
+    background: url('OIP (30).jpg') no-repeat center center fixed;
+    /* Anime-themed background */
+    background-size: cover;
+    /* Cover the entire background */
+    border: 5px solid #333;
+    /* Border around the whole page */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    /* Shadow effect for the border */
+}
+
+
+/* Main Content */
+
+main {
+    padding: 30px;
+    /* Increased padding */
+    background: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent white background for readability */
+    border-radius: 10px;
+    background-image: 'OIP (30).jpg';
+    /* Rounded corners for the main content */
+}
+
+
+/* Header Section */
+
+header {
+    background-color: #c3c7e2;
+    /* Light header background */
+    color: #364492;
+    /* Text color for header */
+    padding: 30px;
+    /* Padding inside the header */
+    text-align: center;
+    /* Center text inside header */
+    border-bottom: 5px solid #444;
+    /* Bottom border for header */
+}
+
+header h5 {
+    font-family: 'Dancing Script', cursive;
+    /* Stylized font for h5 */
+    font-size: 35px;
+    /* Font size for h5 */
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    /* Text shadow for depth */
+}
+
+
+/* Article */
+
+article {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent white background */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+}
+
+article p {
+    font-size: 1.1em;
+    /* Increased font size for readability */
+    line-height: 1.8;
+    /* Increased line height for readability */
+    color: #333;
+    /* Dark color for text */
+    margin-bottom: 20px;
+    /* Space below paragraphs */
+}
+
+article h1 {
+    font-family: 'Press Start 2P', cursive;
+    /* Anime-style font for H1 */
+    font-size: 2.5em;
+    /* Increased font size for H1 */
+    color: #222;
+    /* Dark color for headers */
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    /* Text shadow for depth */
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    /* Modern, sci-fi font for H2 */
+    color: #333;
+    /* Dark color for headers */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Text shadow for depth */
+    font-size: 1.8em;
+    /* Reduced font size for H2 */
+    margin: 20px 0;
+    /* Margin for spacing */
+    padding: 5px;
+}
+
+h3,
+h4 {
+    font-family: 'Press Start 2P', cursive;
+    /* Dynamic, stylized font for H3 */
+    color: #333;
+    /* Dark color for headers */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* Text shadow for subtle depth */
+    font-size: 35px;
+    /* Reduced font size for H3 */
+    margin: 15px 0;
+    /* Margin for spacing */
+    padding: 5px;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Press Start 2P', cursive;
+    /* Anime-style font for H5 */
+    color: #333;
+    /* Dark color for headers */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* Text shadow for subtle depth */
+    font-size: 1.5em;
+    /* Increased font size for H5 */
+    margin: 20px 0;
+    /* Margin for spacing */
+    padding: 5px;
+}
+
+h6 {
+    font-family: 'Orbitron', sans-serif;
+    /* Dynamic, stylized font for H3 */
+    color: #333;
+    /* Dark color for headers */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* Text shadow for subtle depth */
+    font-size: 20px;
+    /* Reduced font size for H3 */
+    text-align: left;
+}
+
+
+/* Wrapper for image and text */
+
+.image-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Align items at the start */
+    margin-bottom: 30px;
+    /* Increased space between blocks */
+    padding: 15px;
+    /* Increased padding inside the wrapper */
+    border: 2px solid #ddd;
+    /* Border around the wrapper */
+    border-radius: 10px;
+    /* Rounded corners for wrapper */
+    background: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white background for wrapper */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    /* Shadow for depth */
+    flex-direction: row;
+    /* Default to row layout */
+}
+
+
+/* Text content style */
+
+.text-content {
+    flex: 1;
+    margin-right: 30px;
+    /* Space between text and image */
+    color: #444;
+    /* Slightly lighter color for text */
+    line-height: 1.8;
+    /* Increased line height for readability */
+    font-size: 1.1em;
+    /* Increased font size for better readability */
+}
+
+
+/* Image container style */
+
+.image-container {
+    width: 500px;
+    /* Increased width */
+    height: 350px;
+    /* Increased height */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(209, 165, 165, 0.3);
+    /* Lighter shadow for image container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    /* White background for image container */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    /* Match the container's rounded corner */
+}
+
+
+/* Footer style */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    /* Increased padding */
+    background-color: #333;
+    /* Dark background for footer */
+    color: #fff;
+    /* Light text color for footer */
+    border-top: 5px solid #444;
+    /* Top border for footer */
+}
+
+footer a {
+    color: #f9c74f;
+    /* Bright color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Underline effect on hover */
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .image-text-wrapper {
+        flex-direction: column;
+        /* Stack vertically on smaller screens */
+        align-items: center;
+        /* Center items on smaller screens */
+    }
+    .text-content {
+        margin-right: 0;
+        /* Remove right margin in column layout */
+        margin-bottom: 20px;
+        /* Space below text content */
+    }
+    .image-container {
+        width: 100%;
+        /* Full width on smaller screens */
+        height: auto;
+        /* Auto height to maintain aspect ratio */
+    }
+}

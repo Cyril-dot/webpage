@@ -1,0 +1,153 @@
+/* Reset some default browser styles */
+
+body,
+h1,
+h2,
+p,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #ff99cc, #cc99ff, #66ccff, #66ffcc, #ff9966);
+    /* Gradient background with multiple anime colors */
+    color: #fff;
+    /* General text color for contrast */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    /* White color for better visibility */
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    /* Increased font size for emphasis */
+    margin: 0 20px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff66b2;
+    /* Bright pink underline */
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+nav a:hover {
+    color: #ff66b2;
+    /* Bright pink color on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge link on hover */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo {
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+    width: 120px;
+    /* Adjusted size */
+    height: 120px;
+    /* Adjusted size */
+}
+
+h2 {
+    text-align: center;
+    color: #ffccff;
+    /* Light pink color */
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    /* Larger font size for impact */
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Adds a shadow effect for better readability */
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+    margin: 20px;
+}
+
+section img {
+    width: 850px;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+    margin-bottom: 20px;
+}
+
+.text {
+    color: #fff;
+    /* White text for contrast against dark backgrounds */
+    font-family: 'Arial', sans-serif;
+}
+
+.text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffccff;
+    /* Light pink color for subheadings */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    /* Shadow for readability */
+}
+
+.text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    /* Slightly off-white color for text */
+}
+
+.text a {
+    color: #ff66b2;
+    /* Bright pink color for buttons */
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.text a:hover {
+    background: #ff66b2;
+    /* Pink background on hover */
+    color: #fff;
+    /* White text on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge button on hover */
+}

@@ -1,0 +1,226 @@
+/* Importing Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+/* General styling */
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to bottom, #f2f2f2, #e6e6e6);
+    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main container styling */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Section styling */
+
+section {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Header styling */
+
+h1,
+h2,
+h3 {
+    font-family: 'Merriweather', serif;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    margin: 10px 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 42px;
+}
+
+h2 {
+    color: #666;
+    font-size: 36px;
+}
+
+h3 {
+    color: #999;
+    font-size: 30px;
+}
+
+
+/* List styling */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 12px 0;
+}
+
+
+/* Link styling */
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #23527c;
+    text-shadow: 0 0 10px rgba(35, 82, 124, 0.8);
+}
+
+
+/* Article styling */
+
+article {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+article:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+    transform: scale(1.03);
+}
+
+
+/* Paragraph styling */
+
+p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* Audio and video styling */
+
+audio,
+video {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
+}
+
+audio:hover,
+video:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+
+/* General styling */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background: #f7f7f7;
+    /* Light gray background */
+    color: #333;
+    /* Dark gray text color */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header styling */
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 48px;
+    color: #222;
+    /* Darker heading color */
+}
+
+h2 {
+    font-size: 36px;
+    color: #444;
+    /* Darker heading color */
+}
+
+h3 {
+    font-size: 30px;
+    color: #555;
+    /* Darker heading color */
+}
+
+
+/* Paragraph styling */
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+    /* Dark gray text color */
+}
+
+
+/* Link styling */
+
+a {
+    color: #337ab7;
+    /* Dark blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #23527c;
+    /* Darker blue link color on hover */
+    text-shadow: 0 0 10px rgba(35, 82, 124, 0.8);
+}
+
+
+/* Article styling */
+
+article {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+article:hover {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.7);
+    transform: scale(1.03);
+}

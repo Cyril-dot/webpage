@@ -1,0 +1,283 @@
+/* Ensure the HTML and body take up the full viewport height */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+
+/* Apply the background image with a gradient overlay */
+
+body {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-background-image.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Prevent image repetition */
+    font-family: 'Playfair Display', serif;
+    /* Use Google Font for body text */
+}
+
+
+/* Basic styling for header, main, and footer */
+
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
+    /* Ensure content is above the background */
+}
+
+
+/* Hero section styling */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(51, 51, 51, 0.8);
+    /* Dark gray with transparency */
+    margin: 20px;
+    /* Add margin for spacing */
+}
+
+.hero-content {
+    width: 50%;
+    /* Adjusted width */
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    /* Adjusted font size */
+    font-weight: bold;
+    margin-bottom: 15px;
+    /* Reduced margin */
+    color: #fff;
+    /* White text color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    /* Darker shadow for better contrast */
+}
+
+.hero-content p {
+    font-size: 24px;
+    /* Adjusted font size */
+    margin-bottom: 20px;
+    /* Reduced margin */
+    color: #fff;
+    /* White text color for contrast */
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    /* Darker shadow for better contrast */
+}
+
+.menu {
+    width: 40%;
+    /* Adjusted width */
+    padding: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: #fff;
+    /* White text color for contrast */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    /* Added transform for hover effect */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #ccc;
+    /* Light gray text color on hover */
+    transform: scale(1.1);
+    /* Slightly enlarge text on hover */
+}
+
+.menu a::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #4CAF50;
+    transition: width 0.2s ease-in-out;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+.cta-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    /* Added transform for hover effect */
+}
+
+.cta-btn:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+    /* Slightly enlarge button on hover */
+}
+
+
+/* Featured Posts Styles */
+
+.featured-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.featured-posts li {
+    display: flex;
+    flex-direction: column;
+    /* Stack image and content */
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Light background for posts */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    /* Add hover effect */
+}
+
+.featured-posts li:hover {
+    transform: translateY(-10px);
+    /* Slightly lift post on hover */
+}
+
+.featured-posts .post-content {
+    width: 90%;
+    /* Adjusted width */
+    padding: 20px;
+}
+
+.featured-posts img {
+    width: 100%;
+    /* Adjusted image size */
+    height: auto;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+    /* Add border for separation */
+}
+
+.featured-posts .post-content h3 {
+    font-size: 24px;
+    /* Adjusted font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    /* Dark color for better readability */
+}
+
+.featured-posts .post-content p {
+    font-size: 16px;
+    /* Adjusted font size */
+    margin-bottom: 15px;
+    /* Reduced margin */
+    color: #666;
+    /* Dark gray text color */
+    font-style: italic;
+    text-align: center;
+}
+
+.featured-posts li.anime-place img,
+.featured-posts li.inspirational-place img,
+.featured-posts li.movie-place img {
+    height: 200px;
+    /* Adjusted image height */
+}
+
+.featured-posts li.anime-place,
+.featured-posts li.inspirational-place,
+.featured-posts li.movie-place {
+    width: 300px;
+    /* Adjusted post width */
+}
+
+
+/* Newsletter Styles */
+
+
+/* Newsletter Styles */
+
+
+/* Video Section Styles */
+
+
+/* Video Section Styles */
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    /* Optional: Background for visual appeal */
+    padding: 20px;
+    /* Space around the video */
+    margin-top: 20px;
+    /* Space between the content and footer */
+}
+
+.video-container {
+    position: relative;
+    width: 90%;
+    /* Increase width to fit more space */
+    max-width: 1400px;
+    /* Maximum width for larger screens */
+    height: 300px;
+    /* Reduced height for a flatter look */
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Optional: Adds shadow for depth */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the video covers the container properly */
+    border: none;
+}
